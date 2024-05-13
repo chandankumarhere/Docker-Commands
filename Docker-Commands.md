@@ -1,5 +1,4 @@
-# Docker Push & Pull Commands Steps
-
+# Docker Create Container & Pull & Push image Commands Steps
 ```bash
 docker run -itd --name cont1 ubuntu /bin/bash
 docker ps
