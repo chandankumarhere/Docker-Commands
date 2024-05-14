@@ -13,12 +13,12 @@ systemctl enable apache2
 apt install iproute2 -y
 apt install iputils-ping -y
 docker commit cont1 image1
-docker tag image1 kumarnishant7835@/chandan:tag1
+docker tag image1 kumarnishant7835/chandan:tag1
 docker login
-docker push kumarnishant7835@/chandan:tag1
+docker push kumarnishant7835/chandan:tag1
 docker rm cont1
 docker rmi image1
-docker pull kumarnishant7835@/chandan:tag1
-docker run -itd --name cont2 kumarnishant7835@/chandan:tag1 /bin/bash/
+docker pull kumarnishant7835/chandan:tag1
+docker run -itd --name cont2 kumarnishant7835/chandan:tag1 /bin/bash/
 docker exec -it cont2 /bon/bash/
 ```
